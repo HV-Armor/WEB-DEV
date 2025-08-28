@@ -1,0 +1,37 @@
+/*Universal CSS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Utility CSS*/
+.flex
+{
+    display: flex;
+}
+
+.col
+{
+    flex-direction: column;
+}
+
+.center
+{
+    justify-content: center;
+    align-items: center;
+}
+
+.warp
+{
+    flex-wrap: wrap;
+}
+
+.w-100
+{
+    width: 100%;
+}
+.h-100
+{
+    height: 100%;
+}
