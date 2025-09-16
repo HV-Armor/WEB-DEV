@@ -1,90 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
 </head>
-<body bgcolor="pink">
-   <center>
-   <style>
-</style>
-    <h1 style="color:brown"><center>Registration form</center></h1>
-      <form style="border: 2px solid black; padding: 10px; width: 600px;" method="get">
-         <table border="0">
-            <tr>
-               <label>
-               <td> Student Name:</td>
-                <td><input name="First name" placeholder="First name" autocomplete="name" /></td>
-                <td><input name="last name" placeholder="Last name" autocomplete="name" /></td>
-               </label>
-            </tr>
-            <tr>
-               <label>
-                 <td>Father Name:</td>
-                 <td><input name="submitted-father-name" autocomplete="father name " /></td>
-                 </label>
-            </tr>
-            <tr>
-               <label>
-                 <td>Mother Name:</td>
-                 <td><input name="submitted-mother-name" autocomplete="mother name" /></td>
-               </label>
-            </tr>
-            <tr>
-               <label>
-                <td>Gender:</td>
-                <td>
-                    <input type="radio" name="Male" value="yes" /> Male
-                    <input type="radio" name="Female" value="no" /> female
-                </td>
-               </label>
-            <tr>
-               <label>
-                 <td>email:</td>
-                 <td><input input="submitted-email" autocomplete="email"></td>
-               </label>
-            </tr>
-            <tr>
-               <label>
-                  <td>DOB:</td>
-                  <td><input type="date" input="date-of-birth"></td>
-               </label>
-            </tr>
-             <tr>
-               <lable>
-                  <td>Branch:</td>
-                  <td>
-                     <select value="" name="course">
-                     <option value="">Select current Cours</option>
-                     <option value="btech">B.Tech</option>
-                     <option value="bsc">B.SC</option>
-                     <option value="BBA">B.AA</option>
-                     <option value="MBA">MBA</option>
-                  </td>
-                  </select>
-            <tr>
-               <lable>
-                  <td>Course:</td>
-                  <td><input type="checkbox" >CSE <input type="checkbox" >ME <input type="checkbox" >ECE <input type="checkbox" >IT</td>
-               </lable>
-            </tr>
-               </lable>
-            </tr>
-            <tr>
-               <td>Student Photo:</td>
-               <td><input type="file" name="student photo"</td>
-            </tr>
-            <tr>
-               <td>Student State/City:</td>
-               <td><input type="text" name="City" placeholder="State"></td>
-               <td><input type="text" name="State" placeholder="City"></td>
-            </tr>
-            <tr align="center">
-            <td colspan="3"><button >REGISTOR</button></td>
-            </tr>
-         </table>
-      </form>
-      </center>
+<body style="background-color:#f5f5f5; font-family:Arial, sans-serif;">
+
+  <h1 style="color:brown; text-align:center;">Registration Form</h1>
+
+  <form method="get" style="border:3px solid #333; border-radius:10px; padding:20px; width:500px; margin:auto; background-color:#ffe6e6; box-shadow:0px 4px 8px rgba(0,0,0,0.2);">
+    <table style="width:100%;">
+      <tr>
+        <td style="padding:8px;">Student Name:</td>
+        <td style="padding:8px;"><input type="text" name="first_name" placeholder="First Name" autocomplete="given-name" style="width:90%; padding:6px; border:1px solid #999; border-radius:5px;"></td>
+        <td style="padding:8px;"><input type="text" name="last_name" placeholder="Last Name" autocomplete="family-name" style="width:90%; padding:6px; border:1px solid #999; border-radius:5px;"></td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">Father's Name:</td>
+        <td colspan="2" style="padding:8px;"><input type="text" name="father_name" style="width:95%; padding:6px; border:1px solid #999; border-radius:5px;"></td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">Mother's Name:</td>
+        <td colspan="2" style="padding:8px;"><input type="text" name="mother_name" style="width:95%; padding:6px; border:1px solid #999; border-radius:5px;"></td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">Gender:</td>
+        <td colspan="2" style="padding:8px;">
+          <input type="radio" name="gender" value="male"> Male
+          <input type="radio" name="gender" value="female"> Female
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">Email:</td>
+        <td colspan="2" style="padding:8px;"><input type="email" name="email" placeholder="Enter your email" style="width:95%; padding:6px; border:1px solid #999; border-radius:5px;"></td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">DOB:</td>
+        <td colspan="2" style="padding:8px;"><input type="date" name="dob" style="width:95%; padding:6px; border:1px solid #999; border-radius:5px;"></td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">Branch:</td>
+        <td colspan="2" style="padding:8px;">
+          <select name="branch" style="width:95%; padding:6px; border:1px solid #999; border-radius:5px;">
+            <option value="">Select Branch</option>
+            <option value="btech">B.Tech</option>
+            <option value="bsc">B.Sc</option>
+            <option value="bba">BBA</option>
+            <option value="mba">MBA</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">Course:</td>
+        <td colspan="2" style="padding:8px;">
+          <input type="checkbox" name="course" value="cse"> CSE 
+          <input type="checkbox" name="course" value="me"> ME 
+          <input type="checkbox" name="course" value="ece"> ECE 
+          <input type="checkbox" name="course" value="it"> IT
+        </td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">Student Photo:</td>
+        <td colspan="2" style="padding:8px;"><input type="file" name="student_photo"></td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">State / City:</td>
+        <td style="padding:8px;"><input type="text" name="state" placeholder="State" style="width:90%; padding:6px; border:1px solid #999; border-radius:5px;"></td>
+        <td style="padding:8px;"><input type="text" name="city" placeholder="City" style="width:90%; padding:6px; border:1px solid #999; border-radius:5px;"></td>
+      </tr>
+      <tr align="center">
+        <td colspan="3" style="padding:12px;">
+          <button type="submit" style="background-color:brown; color:white; border:none; padding:10px 20px; border-radius:8px; font-size:16px; cursor:pointer;">REGISTER</button>
+        </td>
+      </tr>
+    </table>
+  </form>
+
 </body>
 </html>
